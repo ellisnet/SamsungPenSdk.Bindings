@@ -250,3 +250,6 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+src/PenFull/Jars/pen-v4.1.2_full.aar
+src/PenLight/Jars/pen-v4.1.2_light.aar
+src/Sdk/Jars/sdk-v1.0.0.jar

@@ -1,0 +1,50 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <!--Fix Namespace naming-->
+  <attr path="/api/package[@name='com.C2Ddrawbitmap']" name="managedName">C2DDrawBitmap</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen']" name="managedName">Samsung.Droid.Sdk.SPen</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.engine']" name="managedName">Samsung.Droid.Sdk.SPen.Engine</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.document']" name="managedName">Samsung.Droid.Sdk.SPen.Document</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.document.shapeeffect']" name="managedName">Samsung.Droid.Sdk.SPen.Document.ShapeEffect</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.document.textspan']" name="managedName">Samsung.Droid.Sdk.SPen.Document.TextSpan</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.pen']" name="managedName">Samsung.Droid.Sdk.SPen.Pen</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.objectruntime']" name="managedName">Samsung.Droid.Sdk.SPen.ObjectRuntime</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.objectruntime.preload']" name="managedName">Samsung.Droid.Sdk.SPen.ObjectRuntime.Preload</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.pen.preload']" name="managedName">Samsung.Droid.Sdk.SPen.Pen.Preload</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.plugin.framework']" name="managedName">Samsung.Droid.Sdk.SPen.Plugin.Framework</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.plugin.interfaces']" name="managedName">Samsung.Droid.Sdk.SPen.Plugin.Interfaces</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.pointericon']" name="managedName">Samsung.Droid.Sdk.SPen.PointerIcon</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.settingui']" name="managedName">Samsung.Droid.Sdk.SPen.SettingUi</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.recognition']" name="managedName">Samsung.Droid.Sdk.SPen.Recognition</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.recognition.preload']" name="managedName">Samsung.Droid.Sdk.SPen.Recognition.Preload</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.util']" name="managedName">Samsung.Droid.Sdk.SPen.Util</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.recognition.spenshape']" name="managedName">Samsung.Droid.Sdk.Recognition.SPenShape</attr>
+  <attr path="/api/package[@name='com.samsung.android.spen']" name="managedName">Samsung.Droid.SPen</attr>
+  <attr path="/api/package[@name='com.samsung.android.spr.drawable']" name="managedName">Samsung.Droid.Spr.Drawable</attr>
+  <attr path="/api/package[@name='com.samsung.android.spr.drawable.animation']" name="managedName">Samsung.Droid.Spr.Drawable.Animation</attr>
+  <attr path="/api/package[@name='com.samsung.android.spr.drawable.animation.interpolator']" name="managedName">Samsung.Droid.Spr.Drawable.Animation.Interpolator</attr>
+  <attr path="/api/package[@name='com.samsung.android.spr.drawable.cache']" name="managedName">Samsung.Droid.Spr.Drawable.Cache</attr>
+  <attr path="/api/package[@name='com.samsung.android.spr.drawable.document']" name="managedName">Samsung.Droid.Spr.Drawable.Document</attr>
+  <attr path="/api/package[@name='com.samsung.android.spr.drawable.document.animator']" name="managedName">Samsung.Droid.Spr.Drawable.Document.Animator</attr>
+  <attr path="/api/package[@name='com.samsung.android.spr.drawable.document.attribute']" name="managedName">Samsung.Droid.Spr.Drawable.Document.Attribute</attr>
+  <attr path="/api/package[@name='com.samsung.android.spr.drawable.document.attribute.impl']" name="managedName">Samsung.Droid.Spr.Drawable.Document.Attribute.Impl</attr>
+  <attr path="/api/package[@name='com.samsung.android.spr.drawable.document.debug']" name="managedName">Samsung.Droid.Spr.Drawable.Document.Debug</attr>
+  <attr path="/api/package[@name='com.samsung.android.spr.drawable.document.shape']" name="managedName">Samsung.Droid.Spr.Drawable.Document.Shape</attr>
+  <attr path="/api/package[@name='com.samsung.android.spr.engine']" name="managedName">Samsung.Droid.Spr.Engine</attr>
+  <attr path="/api/package[@name='com.samsung.recognitionengine']" name="managedName">Samsung.RecognitionEngine</attr>
+  <attr path="/api/package[@name='com.samsung.vip.engine']" name="managedName">Samsung.Vip.Engine</attr>
+  <attr path="/api/package[@name='com.samsung.vip.engine.shape']" name="managedName">Samsung.Vip.Engine.Shape</attr>
+
+  <!--Fix Visibility issues-->
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.engine']/class[@name='SpenControlBase.CoordinateInfo']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.engine']/class[@name='SpenControlBase.ControlTouchManager']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.engine']/interface[@name='SpenControlBase.ControlTouchManager.Listener']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.engine']/class[@name='SpenControlBase.ControlTouchManager.TouchZone']" name="visibility">public</attr>
+</metadata>
