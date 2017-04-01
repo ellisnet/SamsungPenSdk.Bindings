@@ -37,8 +37,13 @@
   <attr path="/api/package[@name='com.samsung.vip.engine.shape']" name="managedName">Samsung.Vip.Engine.Shape</attr>
   
   <!--Fix Visibility issues-->
+  <!--Increasing visibility (i.e. from protected to public) appears to cause a different problem, and appears to have been the wrong approach
   <attr path="/api/package[@name='com.samsung.android.sdk.pen.engine']/class[@name='SpenControlBase.CoordinateInfo']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.samsung.android.sdk.pen.engine']/class[@name='SpenControlBase.ControlTouchManager']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.samsung.android.sdk.pen.engine']/interface[@name='SpenControlBase.ControlTouchManager.Listener']" name="visibility">public</attr>
-  <attr path="/api/package[@name='com.samsung.android.sdk.pen.engine']/class[@name='SpenControlBase.ControlTouchManager.TouchZone']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.engine']/class[@name='SpenControlBase.ControlTouchManager.TouchZone']" name="visibility">public</attr>-->
+  
+  <!--So, trying the opposite approach - reducing visibility of the referencing method-->
+  <!--<attr path="/api/package[@name='com.samsung.android.sdk.pen.engine']/class[@name='SpenControlBase.RequestCoordinateInfoEventArgs']/method[@name='RequestCoordinateInfoEventArgs']" name="visibility">protected internal</attr>-->
+  <attr path="/api/package[@name='com.samsung.android.sdk.pen.engine']/class[@name='SpenControlBase.RequestCoordinateInfoEventArgs']" name="visibility">protected</attr>
 </metadata>
