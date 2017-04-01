@@ -47,6 +47,12 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
+    <Reference Include="Samsung.0Common.Bindings.XamarinAndroid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HolisticWare.Samsung.Pen.0.0.0.2-alpha-01\lib\MonoAndroid10\Samsung.0Common.Bindings.XamarinAndroid.dll</HintPath>
+    </Reference>
+    <Reference Include="Samsung.Pen.Bindings.XamarinAndroid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HolisticWare.Samsung.Pen.0.0.0.2-alpha-01\lib\MonoAndroid10\Samsung.Pen.Bindings.XamarinAndroid.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
+    <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
